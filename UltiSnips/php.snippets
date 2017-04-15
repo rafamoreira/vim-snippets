@@ -257,4 +257,23 @@ snip.rv = re.match(r'.*(?=\.)', fn).group()
 }
 endsnippet
 
+############### CUSTOM ##################
+
+
+snippet doc_headers "Document Header" b
+	/**
+	 *$1
+	 *
+	 *PHP Version ${2:version}
+	 *
+	 *@category ${3:category}
+	 *@package  $1
+	 *@author   ${4:author} <${5:email}>
+	 *@license  ${6:license} 
+	 *@link     http://github.com/rafamoreira/${7:repo} 
+	 */
+	 $0
+endsnippet
+
+
 # :vim:ft=snippets:
